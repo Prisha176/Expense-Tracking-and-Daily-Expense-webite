@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="splitexpense1.css"> 
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar1">
+            <ul>
+                <li> <a href="expensetracker.html" target="_self">  Expense Tracking</a></li>
+                <li> <a href="aboutus.html" target="_self"> About us</a></li>
+                <li> <a href="contact.html"> Contact us</a></li>
+                <li> <a href="home.html" target="_self"> Log out</a></li>
+            </ul>
+        </div>
+    </div>
+
+   
+    <div class="content">
+        <h2> Split Expense </h2>
+        <h2> Split Expense</h2>
+    </div>
+    <!-- <div class="content"></div>
+        <h2>Expense</h2>
+        <h2>Expense</h2>
+    </div> -->
+  
+    <div class="container" >
+        <div class="box left-box">
+            <p1 id="groups"> Groups</p1>
+            <ul id="groups-list"> </ul>
+        </div>
+        <div class="box right-box" >
+           
+           <button onclick="open_group()"> Create a group</button>
+        </div>
+    </div>
+    <!-- <div class="display-content">
+        <ul id="groups-list"> </ul>
+    </div> -->
+    </div>
+    <form action="#" method="post"> 
+    <div class="container1" id="thiscontainer">
+        <p> Create a group</p>
+         <div class="pop-up" >
+           
+            <label for="grp-name"> Name of the group</label><br>
+            <input id="grp-name" type="text" required><br>
+            <label for="grp-type"> Type of the group</label><br>
+            <input id="grp-type" type="text" placeholder="Eg. home, work, trip etc..." required><br>
+           
+       
+         </div>
+           <div class="pop-up-button">
+            <button class="cancel" onclick=" close_group()" > Cancel</button>
+            <button class="create" onclick="createGroup() " > Create</button>  
+           </div>
+           
+           
+
+       
+    </div>
+</form>
+    <script src="splitexpense1.js"> </script>
+</body>
+</html>

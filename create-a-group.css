@@ -1,0 +1,172 @@
+<<<<<<< HEAD
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+p{
+    margin-top:5px;
+    margin-left: 2em;
+    font-family: 'Inconsolata', monospace;
+    font-variant: small-caps;
+    font-weight:bolder;
+    font-weight: 300;
+    font-size: 2em;
+    text-align:left;
+    display: flex;
+}
+.container1{
+    width: 20em;
+    height: 15em;
+    background: rgb(131, 131, 172);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    align-items: center; 
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    /* padding: 3.5em; */
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.create{
+    margin-top: 4em;
+    padding: 5px 40px 5px 40px;
+    border-radius: 2em;
+    box-shadow: 2em;
+    font-weight: 500;
+    font-size: 1.3em;
+    background: black;
+    color: white;
+    justify-content: end;
+    align-content: end;
+    cursor:pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.cancel{
+    padding: 5px 40px 5px 40px;
+    font-weight: 500;
+    font-size: 1.3em;
+    background:  rgb(255, 255, 255);
+    color: black;
+    /* color:black; */
+    cursor:pointer;
+    border-radius: 2em;
+    box-shadow: 2em;
+    border: 1;
+    justify-content:center;
+    align-content: center;
+    /* cursor:pointer; */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.cancel:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.create:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.pop-up{
+    margin-top: 10px;
+    font-size: larger;
+    font-family: 'Inconsolata', monospace;
+    font-variant: normal;     
+}
+#grp-name{
+    padding: 5px 5px 5px 25px;
+=======
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+p{
+    margin-top:5px;
+    margin-left: 2em;
+    font-family: 'Inconsolata', monospace;
+    font-variant: small-caps;
+    font-weight:bolder;
+    font-weight: 300;
+    font-size: 2em;
+    text-align:left;
+    display: flex;
+}
+.container1{
+    width: 20em;
+    height: 15em;
+    background: rgb(131, 131, 172);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    align-items: center; 
+    text-align: center;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    /* padding: 3.5em; */
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.create{
+    margin-top: 4em;
+    padding: 5px 40px 5px 40px;
+    border-radius: 2em;
+    box-shadow: 2em;
+    font-weight: 500;
+    font-size: 1.3em;
+    background: black;
+    color: white;
+    justify-content: end;
+    align-content: end;
+    cursor:pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.cancel{
+    padding: 5px 40px 5px 40px;
+    font-weight: 500;
+    font-size: 1.3em;
+    background:  rgb(255, 255, 255);
+    color: black;
+    /* color:black; */
+    cursor:pointer;
+    border-radius: 2em;
+    box-shadow: 2em;
+    border: 1;
+    justify-content:center;
+    align-content: center;
+    /* cursor:pointer; */
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.cancel:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.create:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.pop-up{
+    margin-top: 10px;
+    font-size: larger;
+    font-family: 'Inconsolata', monospace;
+    font-variant: normal;     
+}
+#grp-name{
+    padding: 5px 5px 5px 25px;
+>>>>>>> ef896f7ce6bef89a7967a70124e49713087e1fa4
+}

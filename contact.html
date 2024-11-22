@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Us Page</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="contact">
+        <div class="navbar">
+            <div class="navbar1">
+                <ul>
+                    <li> <a href="home.html" target="_self">  Home</a></li>
+                    <li> <a href="aboutus.html" target="_self"> About us</a></li>
+                    <li> <a href="contact.html"> Contact us</a></li>
+                    <!-- <li> <a href="home.html" target="_self"> Log out</a></li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h2 class="title">Contact Us</h2>
+            <p style="color: white;">Contact us for any query regarding the website.
+              <br>  We're here to help and answer any questions you might have. We look forward to hearing from you!
+            </p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><box-icon name='map'></box-icon></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>139, CHARUSAT Campus, <br>Highway, Off, Nadiad - Petlad Rd, <br>Changa, Gujarat 388421  </p>
+                    
+                  </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><box-icon name='envelope'></box-icon></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>prishahadvani@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><box-icon type='solid' name='phone'></box-icon></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>9801235689</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form action="https://api.web3forms.com/submit" method="post" id="myForm" data-web3forms="https://your-web3forms-instance.com" data-web3forms-onSuccess="clearFields">
+                    <h2>Send Message</h2>
+                    <input type="hidden" name="access_key" value="245c01b3-0cf6-4a66-bc93-4708c61b97e4">
+                    <div class="inputbox">
+                        <input type="text" name="full_name" required="required">
+                        <span>Full Name</span>
+                        </div> 
+                    <div class="inputbox">
+                        <input type="text" id="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required" name="message"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" value="Send" name="submit">
+                        <script>
+                            const form = document.getElementById("myForm");
+                            const emailInput = document.getElementById("email");
+                          
+                            form.addEventListener("submit", (e) => {
+                              const email = emailInput.value;
+                              const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                              if (!emailRegex.test(email)) {
+                                e.preventDefault();
+                                alert("Please enter a valid email address");
+                              }
+                            });
+                          </script>
+
+<script>
+    function clearFields() {
+       document.getElementById("myForm").reset();
+    }
+  </script>
+
+                        </div> 
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

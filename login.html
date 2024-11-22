@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/swup@4"></script>
+    <script type="module" src="firebaselogin.js"></script>
+    <script>
+        const swup = new Swup();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>  
+<body>
+    <div class="navbar">
+        <div class="navbar1">
+            <ul>
+                <li> <a href="home.html" target="_self">  Home</a></li>
+                <li> <a href="aboutus.html" target="_self"> About us</a></li>
+                <li> <a href="contact.html"> Contact us</a></li>
+                <!-- <li> <a href="home.html" target="_self"> Log out</a></li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="wrapper">
+        <form id="loginForm">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="email" id="email" placeholder="Email" required>
+                <i class='bx bx-envelope'></i> 
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <div class="remember-forget">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button id="loginBtn" class="btn">Login</button>
+            <div class="register-link">
+                <p> Don't have an account? <a href="register.html" target="_self"> Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
